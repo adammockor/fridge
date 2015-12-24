@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-starter-kit",
+  "name": "fridge",
   "version": "1.0.0",
-  "description": "Get started with React, Redux, and React-Router!",
+  "description": "Fridge",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
+    "url": "git+https://github.com/adammockor/fridge.git"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "Adam Mockor <adam.mockor@gmail.com> (http://mockor.sk)",
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
