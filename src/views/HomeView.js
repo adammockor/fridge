@@ -1,11 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const mapStateToProps = (state) => ({});
-export class HomeView extends React.Component {
+import FridgeList from 'containers/fridge/FridgeList';
 
+const mapStateToProps = (state) => ({
+  fridgeItems: state.fridgeItems
+});
+
+export class HomeView extends React.Component {
   render () {
-    return;
+    return (
+      <FridgeList />
+    );
   }
 }
 
