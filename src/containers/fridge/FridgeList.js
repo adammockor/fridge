@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import List from 'components/List';
+import List from 'components/List/';
+import ListHeader from 'components/List/ListHeader/';
 
 import FridgeItem from './FridgeItem';
 
@@ -17,6 +18,7 @@ const FridgeList = ({
 ) => {
   return (
     <List>
+      <ListHeader>Fridge</ListHeader>
       {fridgeItems.map(item =>
         <FridgeItem
           key={ item.id }
