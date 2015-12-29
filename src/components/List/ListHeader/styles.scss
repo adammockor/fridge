@@ -1,3 +1,17 @@
 .root {
-  composes: root from './../ListItem/styles.scss';
+  composes: root from 'sass!./../ListItem/styles.scss';
+}
+
+.rootWithAction {
+  composes: root;
+  
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+
+.action {
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
 }
