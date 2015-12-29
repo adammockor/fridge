@@ -36,6 +36,7 @@ export default (webpackConfig) => {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
+        warnings: false,
         unused: true,
         dead_code: true
       }
