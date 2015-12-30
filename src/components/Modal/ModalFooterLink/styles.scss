@@ -1,0 +1,13 @@
+.root {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.alignLeft,
+.alignRight {
+  composes: root;
+}
+
+.alignLeft + .alignRight {
+  margin-left: auto;
+}
