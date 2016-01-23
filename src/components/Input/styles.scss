@@ -1,0 +1,44 @@
+.root {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all .3s;
+}
+
+.label {
+  color: #9e9e9e;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  font-size: 1rem;
+  cursor: text;
+  transition: all .2s ease-out;
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    transition: .2s opacity ease-out, .2s color ease-out;
+  }
+}
+
+.labelActive {
+  composes: label;
+  font-size: 0.8rem;
+  transform: translateY(-140%);
+}
