@@ -1,10 +1,10 @@
 import React from 'react';
-import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 import styles from './styles.scss';
-import transition from './modalTransition.scss';
 
 import ReactModal from 'react-modal';
+
+import Content from './ModalContent/'
 
 const customStyles = {
   overlay: {
@@ -38,17 +38,9 @@ export default function Modal ({children, isOpen, onRequestClose}) {
       style={customStyles}
       overlayClassName={styles.overlay}
       onRequestClose={onRequestClose}
+      className={styles.modal}
     >
-      <CSSTransitionGroup
-      transitionAppear
-      transitionAppearTimeout={200}
-      transitionEnterTimeout={200}
-      transitionLeaveTimeout={200}
-      transitionName={transition}>
-      <div className={styles.modal}>
-        {children}
-      </div>
-      </CSSTransitionGroup>
+      {children}
     </ReactModal>
   );
 };
