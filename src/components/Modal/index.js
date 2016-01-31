@@ -4,8 +4,6 @@ import styles from './styles.scss';
 
 import ReactModal from 'react-modal';
 
-import Content from './ModalContent/'
-
 const customStyles = {
   overlay: {
     backgroundColor: null,
