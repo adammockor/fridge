@@ -1,0 +1,27 @@
+.root {
+  display: inline-block;
+  
+  text-decoration: none;
+  text-align: center;
+  transition: .2s ease-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  outline: 0;
+  padding: 0 2rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.primary {
+  color: #fff;
+  background-color: #26a69a;
+}
+
+.m {
+  height: 40px;
+  line-height: 40px;
+}
+
+.disabled {
+  
+}
