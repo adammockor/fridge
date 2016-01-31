@@ -3,7 +3,7 @@ import rootReducer from './modules';
 import {
   applyMiddleware,
   compose,
-  createStore
+  createStore,
 } from 'redux';
 
 export default function configureStore (initialState) {

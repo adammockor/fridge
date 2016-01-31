@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import FridgeList from 'containers/fridge/FridgeList';
 
 const mapStateToProps = (state) => ({
-  fridgeItems: state.fridgeItems
+  fridgeItems: state.fridgeItems,
 });
 
 export class HomeView extends React.Component {

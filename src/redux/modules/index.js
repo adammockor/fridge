@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 import { routeReducer } from 'redux-simple-router';
+import {reducer as formReducer} from 'redux-form';
 
-import fridgeItems from './fridgeItems.js';
+import fridge from './fridge.js';
 
 export default combineReducers({
-  fridgeItems,
-  router: routeReducer
+  fridge,
+  router: routeReducer,
+  form: formReducer,
 });

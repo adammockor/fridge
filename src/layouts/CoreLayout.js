@@ -21,7 +21,7 @@ function CoreLayout ({ children }) {
 }
 
 CoreLayout.propTypes = {
-  children: React.PropTypes.element
+  children: React.PropTypes.element,
 };
 
 export default CoreLayout;

@@ -11,7 +11,7 @@ const customStyles = {
     top: null,
     left: null,
     right: null,
-    bottom: null
+    bottom: null,
   },
   content: {
     top: null,
@@ -25,8 +25,8 @@ const customStyles = {
     position: null,
     overflow: null,
     outline: null,
-    WebkitOverflowScrolling: null
-  }
+    WebkitOverflowScrolling: null,
+  },
 };
 
 export default function Modal ({children, isOpen, onRequestClose}) {

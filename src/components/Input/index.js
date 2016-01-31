@@ -11,16 +11,15 @@ export default class Input extends React.Component {
     type: React.PropTypes.string.isRequired,
     label: React.PropTypes.string.isRequired,
     value: React.PropTypes.string,
-    onChange: React.PropTypes.func
+    onChange: React.PropTypes.func,
   };
 
   constructor (props) {
-    console.log(props);
     super(props);
 
     this.state = {
       value: this.props.value || '',
-      isFocused: false
+      isFocused: false,
     };
   }
 
@@ -44,7 +43,7 @@ export default class Input extends React.Component {
   render () {
     let label = cx({
       labelActive: this.state.isFocused || this.state.value,
-      label: !this.labelActive
+      label: !this.labelActive,
     });
 
     return (

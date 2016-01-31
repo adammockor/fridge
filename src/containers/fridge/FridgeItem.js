@@ -7,9 +7,9 @@ const mapStateToProps = (state) => {
   return {};
 };
 
-const FridgeItem = ({children}) => {
+const FridgeItem = ({children, ...props}) => {
   return (
-    <ListItem>{children}</ListItem>
+    <ListItem {...props}>{children}</ListItem>
   );
 };
 
